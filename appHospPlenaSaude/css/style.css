@@ -1,0 +1,228 @@
+body {
+    background-color: #D5D5D5;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFF;
+}
+
+li {
+    list-style-type: none;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #FFFF;
+  }
+
+.tela-login {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "homepage" "login" "login-button"; 
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+.tela-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: "button-sair" "pedidos" "garantia"; 
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tela-detalhes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    grid-template-areas: "bt-home" "detail" "bt-garantia"; 
+    grid-row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    background-color: #5A91E5;
+    border-radius: 10px;
+}
+
+#title {
+    grid-area: homepage;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.login-form {
+    grid-area: login;
+}
+
+#input-email{
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#input-password {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.submit-bt {
+    grid-area: login-button;
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    background: #5a91e5;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #FFFF;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.submit-bt:hover {
+    cursor: pointer;
+    background-color:#1d52a1
+}
+
+.button-sair {
+    grid: button-sair;
+    font-size: 15px;
+}
+
+.pedidos {
+    grid-area: pedidos;
+    font-size: 20px;
+    text-align:center;
+}
+#ped1 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#ped2 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#ped3 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#ped4 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.garantia{
+    grid-area: garantia;
+    font-size: 20px;
+    text-align:center;
+}
+
+#gar1 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#gar2 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#gar3 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+#gar4 {
+    border-color: #5a91e5;
+    border-width: 0px;
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    background: #88b5f9;
+    border-radius: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.bt-home {
+    grid: button-home;
+    font-size: 15px;
+    background-color: #ADBACC;
+    width: 80px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.detail {
+    grid: detail;
+}
+.bt-garantia {
+    grid: bt-garantia;
+    background-color: #C4C4C4;
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    text-align: center;
+}
